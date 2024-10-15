@@ -2,6 +2,18 @@
  Repository for the work presented in: [A Little Human Data Goes A Long Way]().
  
  The key result of our work is that Fact Verification and Question Answering systems trained on purely synthetic data can be improved if we include minimal amounts of human data during training. 
+ 
+ We show that the performance decline associated with replacing human generated data with synthetic data is most chronic only after crossing 90% replacement.
+ 
+ ![Figure 1: Change in model performance as the proportion of synthetic points in the training data is increased. Across datasets, the performance decrease when moving from 0\% to 90\% synthetic data is often less than that of moving from 90\% to purely synthetic data.](figures/fv.png)
+ 
+ Surprisingly, this finding persists until the very end, with the performance drop between 97.5\% and 100\% replacement being significant across all datasets. 
+ 
+ ![Figure 2: Model performance as the synthetic proportion of the training data varies from 95\% to 100\%. Across all datasets and random seeds, having just 2.5\% of the training dataset being human generated boosts performance.](figures/qa.png)
+ 
+ Finally we study the performance tradeoff implied by the use of purely synthetic data, discovering that the performance boost provided by just 200 human generated can only be matched by an order of magnitude more of synthetic data. 
+ 
+ ![Adding 200 real data points is as effective as adding an order of magnitude more synthetic data points.](figures/wanli.png)
 
 See the paper to learn more. 
  
