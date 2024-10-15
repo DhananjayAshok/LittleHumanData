@@ -46,7 +46,7 @@ Then process the data with
 ```sh
 python data/process_data.py
 ```
-If you want to add a custom dataset, you can add one in the format given in [process_data.py](process_data.py) file
+If you want to add a custom dataset, you can add one in the format given in [process_data.py](data/process_data.py) file
 
 This will save the data files to csvs in $data_dir/generated/$dataset_name/{train, valid, test}.csv
 
@@ -55,7 +55,9 @@ To generate synthetic datasets for them use,
 python data/gen_dataset.py
 ```
 
-You will need to set up an OpenAI API Key for this step to work
+You will need to set up an OpenAI API Key for this step to work. 
+
+We are working on releasing the synthetic datasets to HuggingFace, and will share the link here once we have.
 
 # Experiments
 The configurations and commands for various experiments are found in the scripts folder, see them for the commands required to replicate our results. 
