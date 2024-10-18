@@ -1,5 +1,5 @@
 # A Little Human Data Goes A Long Way
- Repository for the work presented in: [A Little Human Data Goes A Long Way]().
+ Repository for the work presented in: [A Little Human Data Goes A Long Way](https://arxiv.org/abs/2410.13098).
  
  The key result of our work is that Fact Verification and Question Answering systems trained on purely synthetic data can be improved if we include minimal amounts of human data during training. 
  
